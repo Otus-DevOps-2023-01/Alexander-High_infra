@@ -140,3 +140,12 @@ packer build -var-file=variables.json immutable.json
 Созданы отдельные плейбуки app.yml, db.yml, deploy.yml
 Добавлено управлеие конфигурацией site.yml
 Изменены провиженеры в packer
+
+=====================================
+# Ansible-3 Написание Ansible ролей для управления конфигурацией сервисов и настройками хостов.
+=====================================
+Создал роли app и db и перенес в них task, templates и handlers
+Создал environments для stage и prod
+Перенес старые файлы
+Создал директорию и перенес playbooks
+Добавил vault key и зашифровал креды
